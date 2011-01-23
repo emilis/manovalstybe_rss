@@ -1,6 +1,7 @@
 <?php
-define('DROOT', dirname(dirname(__FILE__)) . '/');
-define('APP_PATH', DROOT.'__scripts/');
+
+define('APP_PATH', dirname(__FILE__) . '/');
+define('DROOT', dirname(APP_PATH) . '/');
 
 require APP_PATH.'configs/app.php';
 require APP_PATH.'configs/config.php';
@@ -13,20 +14,22 @@ foreach ( $config['links'] as $site_name => $site ) {
     $tpl = new Template();
     $arr_sites = process_site($site);
     foreach ( $arr_sites as $type => $elem ) {
-	foreach ( $elem as $repo ) {
-	    $tpl->load($type, 'rss_template', $repo);
-	}
+        foreach ( $elem as $repo ) {
+            $tpl->load($type, 'rss_template', $repo);
+        }
     }
 
     $arr_stats = site_stats($site_name);
-    if ( $arr_stats )
-	$tpl->load('stats', 'stats', $arr_stats);
+    if ( $arr_stats ) {
+    	$tpl->load('stats', 'stats', $arr_stats);
+    }
 
     $config['current_url'] = $lang['url'][$site_name];
     $config['current_name'] = $lang[$site_name];
     $fmsg = $tpl->render(true);
+    $subject = $lang[$site_name] . ' savaites ataskaita';
 
-    echo $fmsg;
+    echo "$subject\n\n$fmsg\n";
 //    echo '</br>';
 //    send_mail($config['mail_to'], $subject, $fmsg, $config['mail_from'], 'manovalstybe.lt');
 }
