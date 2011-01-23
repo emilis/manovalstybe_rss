@@ -34,17 +34,21 @@ $config['links']['kaveikiavaldzia']['git']['kaveikiavaldzia-design'] = 'http://g
 //$config['links']['kaveikiavaldzia']['teambox'][] = 'http://teambox.com/projects/kaveikiavaldzia.rss?rss_token=aa3b431326f0f22fc43c09917606dde90eabb872103888';
 //$config['links']['kaveikiavaldzia']['atom'][] = 'http://www.facebook.com/feeds/page.php?format=atom10&id=248440466844';
 
+$config['links']['atvirosdb']['site']['revision_list'] = 'http://lt.ckan.net/revision/list?format=atom&days=7';
+
 
 $lang['manovalstybe'] = 'ManoValstybe.lt';
 $lang['parasykjiems'] = 'ParasykJiems.lt';
 $lang['kaveikiavaldzia'] = 'KaVeikiaValdzia.lt';
+$lang['atvirosdb'] = 'lt.ckan.net';
 $lang['url']['manovalstybe'] = 'http://www.manovalstybe.lt';
 $lang['url']['parasykjiems'] = 'http://www.parasykjiems.lt';
 $lang['url']['kaveikiavaldzia'] = 'http://www.kaveikiavaldzia.lt';
+$lang['url']['atvirosdb'] = 'http://lt.ckan.net';
 
 $lang['atom_title'] = 'Diskusijos:';
 $lang['teambox_title'] = 'Teambox diskusijos ir darbai:';
-$lang['site_title'] = '<a href="%s">%s</a> tinklaraščio naujienos:';
+$lang['site_title'] = '<a href="%s">%s</a> naujienos:';
 $lang['git_title'] = '<a href="%s">%s</a> kodo pakeitimai:';
 
 $lang['nochanges'] = 'Pakeitimu nera.';
