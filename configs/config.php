@@ -26,7 +26,7 @@ $config['links']['manovalstybe']['git']['manovalstybe-wp-theme'] = 'http://githu
 $config['links']['manovalstybe']['git']['manovalstybe_rss'] = 'http://github.com/emilis/manovalstybe_rss/commits/master.atom';
 
 $config['links']['parasykjiems']['site']['parasykjiems.lt'] = 'http://parasykjiems.lt/threads/rss/';
-$config['links']['parasykjiems']['git']['parasykjiems'] = 'http://bitbucket.org/kspiridonovas/parasykjiems/atom';
+$config['links']['parasykjiems']['git']['parasykjiems'] = 'http://bitbucket.org/kspi/parasykjiems/atom';
 //$config['links']['parasykjiems']['teambox'][] = 'http://teambox.com/projects/parasykjiems.rss?rss_token=aa3b431326f0f22fc43c09917606dde90eabb872103888';
 //
 $config['links']['kaveikiavaldzia']['git']['PolicyFeed'] = 'http://github.com/emilis/PolicyFeed/commits/master.atom';
